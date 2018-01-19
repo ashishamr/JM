@@ -33,7 +33,7 @@ public class BaseTest {
         }
 		driver = new ChromeDriver();*/
 		// Create a wait. All test classes use this.
-		wait = new WebDriverWait(driver, 40);
+		wait = new WebDriverWait(driver, 15);
 		
 		// Maximize Window
 		driver.manage().window().maximize();

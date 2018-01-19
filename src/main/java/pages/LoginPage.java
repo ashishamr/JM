@@ -22,10 +22,8 @@ public class LoginPage extends BasePage{
     String passwordXpath = "//input[contains(@aria-label,'Enter your password')][@autocomplete='current-password']";
     String NextButtonPWd = "//*[@id='passwordNext']/content/span";
     String actualTitle1ID = "headingText";
-    String actualTitle2ID = "headingSubtext";
+    String actualTitle2ID = "headingSubtext";   
     
-    
-
     //*********Page Methods*********
 
     public void loginToGmail (String username, String password){

@@ -42,7 +42,7 @@ public class BasePage {
 
     //Read Text
     public String readText (By elementLocation) {
-    	WebDriverWait wait = new WebDriverWait(driver, 40);
+    	WebDriverWait wait = new WebDriverWait(driver, 15);
     	return wait.until(ExpectedConditions.visibilityOfElementLocated(elementLocation)).getText();
         //return driver.findElement(elementLocation).getText();
     }

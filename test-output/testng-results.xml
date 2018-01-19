@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="N11 Test Suite" duration-ms="29874" started-at="2018-01-19T17:19:19Z" finished-at="2018-01-19T17:19:49Z">
+  <suite name="N11 Test Suite" duration-ms="25884" started-at="2018-01-19T17:55:15Z" finished-at="2018-01-19T17:55:41Z">
     <groups>
     </groups>
-    <test name="LoginTest" duration-ms="29874" started-at="2018-01-19T17:19:19Z" finished-at="2018-01-19T17:19:49Z">
+    <test name="LoginTest" duration-ms="25884" started-at="2018-01-19T17:55:15Z" finished-at="2018-01-19T17:55:41Z">
       <class name="tests.LoginTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LoginTests@c038203]" name="setup" is-config="true" duration-ms="1693" started-at="2018-01-19T12:19:19Z" finished-at="2018-01-19T12:19:21Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LoginTests@c038203]" name="setup" is-config="true" duration-ms="1682" started-at="2018-01-19T12:55:15Z" finished-at="2018-01-19T12:55:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validLoginTest_ValidUserName_ValidPassword(java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTests@c038203]" name="validLoginTest_ValidUserName_ValidPassword" duration-ms="6805" started-at="2018-01-19T12:19:21Z" description="Valid Login Scenario with Valid username and password." finished-at="2018-01-19T12:19:28Z">
+        <test-method status="PASS" signature="validLoginTest_ValidUserName_ValidPassword(java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTests@c038203]" name="validLoginTest_ValidUserName_ValidPassword" duration-ms="3349" started-at="2018-01-19T12:55:17Z" description="Valid Login Scenario with Valid username and password." finished-at="2018-01-19T12:55:20Z">
           <params>
             <param index="0">
               <value>
@@ -27,17 +27,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest_ValidUserName_ValidPassword -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.LoginTests@c038203]" name="teardown" is-config="true" duration-ms="2839" started-at="2018-01-19T12:19:28Z" finished-at="2018-01-19T12:19:30Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.LoginTests@c038203]" name="teardown" is-config="true" duration-ms="2838" started-at="2018-01-19T12:55:20Z" finished-at="2018-01-19T12:55:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.LoginTests -->
       <class name="tests.NegativeTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.NegativeTest@cc285f4]" name="setup" is-config="true" duration-ms="1237" started-at="2018-01-19T12:19:30Z" finished-at="2018-01-19T12:19:32Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.NegativeTest@cc285f4]" name="setup" is-config="true" duration-ms="1237" started-at="2018-01-19T12:55:23Z" finished-at="2018-01-19T12:55:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="invalidLoginTest_EmptyUserEmptyPassword()[pri:1, instance:tests.NegativeTest@cc285f4]" name="invalidLoginTest_EmptyUserEmptyPassword" duration-ms="14076" started-at="2018-01-19T12:19:32Z" description="Invalid Login Scenario with empty username and password." finished-at="2018-01-19T12:19:46Z">
+        <test-method status="FAIL" signature="invalidLoginTest_EmptyUserEmptyPassword()[pri:1, instance:tests.NegativeTest@cc285f4]" name="invalidLoginTest_EmptyUserEmptyPassword" duration-ms="13567" started-at="2018-01-19T12:55:24Z" description="Invalid Login Scenario with empty username and password." finished-at="2018-01-19T12:55:38Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[contains(@aria-label,'Enter your password')][@autocomplete='current-password']"}
@@ -49,7 +49,7 @@ Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.35
 System info: host: 'IBM472-R90HR3JC', ip: '9.31.52.152', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\IBM_AD~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
-Session ID: 27c84348181067ef7b588463ca0e70da
+Session ID: faa9495644d1a81154445f07b12714f9
 *** Element info: {Using=xpath, value=//input[contains(@aria-label,'Enter your password')][@autocomplete='current-password']}]]>
             </message>
             <full-stacktrace>
@@ -62,7 +62,7 @@ Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.35
 System info: host: 'IBM472-R90HR3JC', ip: '9.31.52.152', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\IBM_AD~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
-Session ID: 27c84348181067ef7b588463ca0e70da
+Session ID: faa9495644d1a81154445f07b12714f9
 *** Element info: {Using=xpath, value=//input[contains(@aria-label,'Enter your password')][@autocomplete='current-password']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -81,7 +81,7 @@ Session ID: 27c84348181067ef7b588463ca0e70da
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at pages.BasePage.writeText(BasePage.java:40)
-	at pages.LoginPage.loginToGmail(LoginPage.java:42)
+	at pages.LoginPage.loginToGmail(LoginPage.java:40)
 	at tests.NegativeTest.invalidLoginTest_EmptyUserEmptyPassword(NegativeTest.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -114,7 +114,7 @@ Session ID: 27c84348181067ef7b588463ca0e70da
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginTest_EmptyUserEmptyPassword -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.NegativeTest@cc285f4]" name="teardown" is-config="true" duration-ms="2843" started-at="2018-01-19T12:19:46Z" finished-at="2018-01-19T12:19:49Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.NegativeTest@cc285f4]" name="teardown" is-config="true" duration-ms="2840" started-at="2018-01-19T12:55:38Z" finished-at="2018-01-19T12:55:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
