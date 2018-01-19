@@ -2,6 +2,8 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
@@ -16,7 +18,21 @@ public class BasePage {
 
     //Click Method
     public void click (By elementLocation) {
-        driver.findElement(elementLocation).click();
+        //driver.findElement(elementLocation).click();
+        
+        while(true){
+            try{
+            	driver.findElement(elementLocation).click();
+                break;
+            }catch (Throwable e){
+                try {
+                    Thread.sleep(3000);
+                } catch (InterruptedException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        }
+        
     }
 
     //Write Text
@@ -26,6 +42,8 @@ public class BasePage {
 
     //Read Text
     public String readText (By elementLocation) {
-        return driver.findElement(elementLocation).getText();
+    	WebDriverWait wait = new WebDriverWait(driver, 40);
+    	return wait.until(ExpectedConditions.visibilityOfElementLocated(elementLocation)).getText();
+        //return driver.findElement(elementLocation).getText();
     }
 }

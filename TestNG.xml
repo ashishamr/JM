@@ -9,6 +9,9 @@
     <test name="LoginTest">
         <classes>
             <class name="tests.LoginTests"/>
+            <class name="tests.NegativeTest"/>
+       		<parameter name="userName" value="Ig4RCiYHAQcCWl1fWisyAw0GD0UPAA4=" />
+       		<parameter name="Password" value="Ig5AGTRKJSIrKl1dUA==" />       		
         </classes>
     </test>
 </suite>

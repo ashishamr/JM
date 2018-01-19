@@ -1,7 +1,11 @@
+
 package pages;
+
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -13,31 +17,46 @@ public class LoginPage extends BasePage{
     }
 
     //*********Web Elements*********
-    String usenameId = "email";
-    String passwordId = "password";
-    String loginButtonId = "loginButton";
-    String errorMessageUsernameXpath = "//*[@id=\"loginForm\"]/div[1]/div/div";
-    String errorMessagePasswordXpath = "//*[@id=\"loginForm\"]/div[2]/div/div ";
+    String usenameId = "identifierId";
+    String NextButtonUserNameXpath = "//*[@id='identifierNext']/content/span";
+    String passwordXpath = "//input[contains(@aria-label,'Enter your password')][@autocomplete='current-password']";
+    String NextButtonPWd = "//*[@id='passwordNext']/content/span";
+    String actualTitle1ID = "headingText";
+    String actualTitle2ID = "headingSubtext";
+    
+    
 
     //*********Page Methods*********
 
-    public void loginToN11 (String username, String password){
-        //Enter Username(Email)
-        writeText(By.id(usenameId),username);
+    public void loginToGmail (String username, String password){
+        //Enter Username(Email)  
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        writeText(By.id(usenameId), username); 
+       
+        //Click on NextButton
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        click(By.xpath(NextButtonUserNameXpath));
+        
         //Enter Password
-        writeText(By.id(passwordId), password);
-        //Click Login Button
-        click(By.id(loginButtonId));
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        writeText(By.xpath(passwordXpath), password); 
+      
+        //Click Next Button
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        click(By.xpath(NextButtonPWd)); 
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-    //Verify Username Condition
-    public void verifyLoginUserName (String expectedText) {
-        Assert.assertEquals(readText(By.xpath(errorMessageUsernameXpath)), expectedText);
+    //Verify SignIn Heading Title 1
+    public void verifySignInTitle1 (String expectedText) {  
+    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);   	
+        Assert.assertEquals(readText(By.id(actualTitle1ID)), expectedText);  
     }
 
-    //Verify Password Condition
-    public void verifyLoginPassword (String expectedText) {
-        Assert.assertEquals(readText(By.xpath(errorMessagePasswordXpath)), expectedText);
+    //Verify SignIn Heading Title 1
+    public void verifySignInTitle2 (String expectedText) {
+    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 
+        Assert.assertEquals(readText(By.id(actualTitle2ID)), expectedText);
     }
 
 }

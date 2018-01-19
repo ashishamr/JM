@@ -9,19 +9,18 @@ public class HomePage extends BasePage {
     //*********Constructor*********
     public HomePage (WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
-    }
+    }    
 
     //*********Page Variables*********
-    String baseURL = "http://www.n11.com/";
+    String baseURL = "https://accounts.google.com";
 
     //*********Web Elements*********
     String signInButtonClass = "btnSignIn";
 
-
     //*********Page Methods*********
 
     //Go to Homepage
-    public void goToN11 (){
+    public void goToGMail (){
         driver.get(baseURL);
         //driver.navigate().to(baseURL)
     }
