@@ -2,7 +2,7 @@ package utils.others;
 
 public class PasswordDecoderTest {
     public static void main(String[] args) {
-        String strToEncode = "excellentPassword";
+        String strToEncode = "Narasimha1109@gmail.com";
         String key = "lockUnlock";
         String strEncryptedString = StringEncrypt.encryptXOR(strToEncode, key);
         System.out.println("Encrypted string: " + strEncryptedString);

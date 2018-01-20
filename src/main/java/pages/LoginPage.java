@@ -42,7 +42,7 @@ public class LoginPage extends BasePage{
         //Click Next Button
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         click(By.xpath(NextButtonPWd)); 
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);        
     }
 
     //Verify SignIn Heading Title 1

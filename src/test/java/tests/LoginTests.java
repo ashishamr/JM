@@ -45,7 +45,7 @@ public class LoginTests extends BaseTest {
         String decodedPwd = StringEncrypt.decryptXOR(Password, key);  
         
         //Login to Gmail
-        loginPage.loginToGmail (decodedUser, decodedPwd);        
+        loginPage.loginToGmail (decodedUser, decodedPwd); 
     }    
 
 }
