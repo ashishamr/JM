@@ -1,4 +1,4 @@
-package tests;
+package WebAPI;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
