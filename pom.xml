@@ -37,7 +37,8 @@
             <version>6.11</version>
         </dependency>
         
-        <!-- 	JUnit -->	
+        <!-- 	JUnit -->
+        <!-- Something or other -->	
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
