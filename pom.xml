@@ -12,11 +12,13 @@
     
     	<!-- 	Selenium -->	
     	<!-- rest assured dependency -->
+    	<!-- tim comments  -->
     	<dependency>
-    <groupId>com.jayway.restassured</groupId>
-    <artifactId>rest-assured</artifactId>
-    <version>2.3.4</version>
-</dependency>
+    		<groupId>com.jayway.restassured</groupId>
+    		<artifactId>rest-assured</artifactId>
+    		<version>2.3.4</version>
+		</dependency>
+		
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
