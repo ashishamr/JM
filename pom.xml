@@ -9,22 +9,9 @@
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
-    <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
-<dependency>
-    <groupId>org.apache.httpcomponents</groupId>
-    <artifactId>httpclient</artifactId>
-    <version>4.5.5</version>
-</dependency>
-    <!-- https://mvnrepository.com/artifact/com.ning/async-http-client -->
-<dependency>
-    <groupId>com.ning</groupId>
-    <artifactId>async-http-client</artifactId>
-    <version>1.9.40</version>
-</dependency>
+   
     
-    	<!-- 	Selenium -->	
-    	<!-- rest assured dependency -->
-    	<!-- tim comments  -->
+   
     	<dependency>
     		<groupId>com.jayway.restassured</groupId>
     		<artifactId>rest-assured</artifactId>
@@ -66,15 +53,11 @@
     		<version>1.0</version>
 		</dependency>
 		
-		     <!-- 	JIRA -->
-		  <!--    New code -->
+		  
 		     <!-- https://mvnrepository.com/artifact/net.rcarz/jira-client -->	
-		<dependency>
-      		<groupId>net.rcarz</groupId>
-      		<artifactId>jira-client</artifactId>
-      		<version>0.5</version>
-      		<scope>compile</scope>
-    	</dependency>
+		<!-- https://mvnrepository.com/artifact/com.atlassian.jira/jira-rest-java-client-core -->
+<!-- https://mvnrepository.com/artifact/com.atlassian.jira/jira-rest-java-client-core -->
+
 
     </dependencies>
 
